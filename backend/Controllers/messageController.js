@@ -4,10 +4,10 @@ const messageModel = require('../Models/messageModel')
 //createMessage
 
 const createMessage = async(req, res) => {
-    const {chatId, senderId, tex} = req.body
+    const {chatId, senderId, text} = req.body
 
     const message = new messageModel({
-        chatId, senderId, tex
+        chatId, senderId, text
     })
 
     try {

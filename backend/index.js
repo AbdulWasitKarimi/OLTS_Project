@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 const port = process.env.PORT || 5000;
 const uri = process.env.ATLAS_URI;
 
-app.listen(port, (req, res) => {
+app.listen(port, () => {
     console.log(`Server runnig on port : ${port}`);
 })
 
